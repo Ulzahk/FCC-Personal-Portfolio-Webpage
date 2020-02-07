@@ -1,5 +1,202 @@
 
 
-@media only screen and(max-width: 600px){
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: burlywood;
+    color: #fff;
+    text-align: right;
+    font-size: 30px;
+    box-sizing: border-box;
+    display: none;
+}
+
+nav {
+    width: 100%;
+    background-color: burlywood;
+    box-shadow: 0px 5px 5px #2b2a2a96;
+    position: fixed;
+    z-index: 1;
+}
+
+nav ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 18px;
+    justify-content: flex-end;
+}
+
+.item-list{
+    padding: 25px 15px 25px 15px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(172, 133, 83);
+}
+
+#welcome-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+#projects {
+    padding: 15vh 4.5vh;
+    text-align: center;
+    width: 95%;
+}
+
+#projects-title{
+    padding-bottom: 5%;
+}
+
+.projects-guideline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.flip-card{
+    background-color: transparent;
+    width: 400px;
+    height: 250px;
+    perspective: 2000px;
+    border-radius: 5px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    border-radius: 5px;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front{
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.flip-card-back{
+    background-color: #000000;
+    color: #fff;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+}
+
+
+
+.image-project{
+    width: 400px;
+    height:  250px;
+    border-radius: 5px;
+}
+
+
+#contact {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+@media (max-width: 600px){
+
+    ul {
+        width: 100%;
+        display: none;
+    }
+
+    ul li{
+        width: 93%;
+        display: block;
+        text-align: center;
+    }
+    
+    .toggle{
+        display: block;
+        cursor: pointer;
+    }
+
+    .active{
+        display: block;
+    }
+
+    #projects {
+        width: 80%;
+    }
+    
+    
+
+
+    .projects-screen {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 6px;
+    }
+
+    .flip-card{
+        width: 300px;
+        height: 200px;
+    }
+
+    .image-project{
+        width: 300px;
+        height:  200px;
+        border-radius: 5px;
+    }
 
 }
