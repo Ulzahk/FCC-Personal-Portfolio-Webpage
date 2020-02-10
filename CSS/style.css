@@ -352,7 +352,7 @@ nav ul li:hover {
 
     #projects {
         width: 100%;
-        margin-left: -12.5%;
+        margin-left: -12.2%;
     }
 
     #projects-title {
@@ -385,7 +385,7 @@ nav ul li:hover {
 
     #tools{
         width: 100%;
-        margin-left: -12.5%;
+        margin-left: -12.2%;
     }
 
     #title-tools{
@@ -403,20 +403,20 @@ nav ul li:hover {
 
     #contact {
         width: 100%;
-        margin-left: -12.5%;
+        margin-left: -12.2%;
         
     }
 
     #title-contact{
-        padding-left: 42%;
+        padding-left: 45%;
         text-align: center;
         margin-right: -30px;
-        font-size: 35px;
+        font-size: 32px;
         
     }
 
     #p-contact{
-        padding-left: 10%;
+        padding-left: 15%;
         padding-top: 5%;
         padding-bottom: 5%;
         text-align: center;
