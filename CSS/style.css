@@ -298,22 +298,82 @@ nav ul li:hover {
 
 @media (max-width: 1100px){
 
+    #welcome-section{
+        width: 100%; 
+    }
+
+    #projects {
+        width: 100%;
+        margin-left: -8.5%;
+    }
+
+    #projects-title {
+        padding-left: 22%;
+        font-size: 40px;
+    }
+
     .projects-screen {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        padding-left: 8%;
+
     }
 
     .flip-card{
-        width: 375px;
-        height:  225px;
+        width: 350px;
+        height:  200px;
     }
 
     .image-project{
-        width: 375px;
-        height: 225px;
+        width: 350px;
+        height: 200px;
     }
 
+    #tools{
+        width: 100%;
+        margin-left: -8.5%;
+    }
+
+
+    #title-tools{
+        padding-left: 30%;
+        font-size: 40px;
+    }
+
+    .tools-screen {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 20%;
+    }
+
+    #contact {
+        width: 100%;
+        margin-left: -8.5%; 
+    }
+
+    #title-contact{
+        padding-left: 30%;
+        font-size: 40px;
+    }
+
+    #p-contact{
+        padding-left: 10%; 
+    }
+
+    .contact-screen{
+        padding-left: 20%;
+    }
+
+    .text-profile{
+        display: none;
+    }
+
+    #footer-credits {
+        text-align: center;
+        padding: 10% 0 0 10%;
+        color: white;
+    }
 
 }
 
@@ -342,7 +402,7 @@ nav ul li:hover {
     }
 
     #welcome-section{
-        width: 100%;
+        width: 100%; 
     }
 
     nav ul li:hover {
@@ -365,7 +425,8 @@ nav ul li:hover {
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 12px;
-        padding-left: 18%;
+        padding-left: 25%;
+        margin-left: -25px;
     }
 
 
@@ -431,6 +492,10 @@ nav ul li:hover {
         grid-gap: 10px;
         padding-left: 30%;
         text-align: center;
+    }
+
+    .text-profile{
+        display: inline-block;
     }
 
     #footer-credits {
