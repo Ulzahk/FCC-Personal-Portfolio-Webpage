@@ -327,7 +327,7 @@ nav ul li:hover {
     }
 
     ul li{
-        width: 93%;
+        width: 100%;
         display: block;
         text-align: center;
     }
@@ -345,9 +345,19 @@ nav ul li:hover {
         width: 100%;
     }
 
+    nav ul li:hover {
+        background-image: linear-gradient(to right top, #c02a25, #b4221f, #a71919, #9b1416, #941014);
+        border: none;
+    }
+
     #projects {
         width: 100%;
-        padding-right: 25%;
+        margin-left: -12.5%;
+    }
+
+    #projects-title {
+        padding-left: 30%;
+        margin-top: -20px;
     }
     
     .projects-screen {
@@ -355,11 +365,17 @@ nav ul li:hover {
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 12px;
+        padding-left: 18%;
     }
+
 
     .flip-card{
         width: 300px;
         height: 200px;
+    }
+
+    .flip-card-back{
+        line-height: 1.7;
     }
 
     .image-project{
@@ -369,11 +385,58 @@ nav ul li:hover {
 
     #tools{
         width: 100%;
+        margin-left: -12.5%;
+    }
+
+    #title-tools{
+        padding-left: 45%;
+        text-align: center;
+        margin-right: -30px;
     }
 
     .tools-screen {
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding-left: 32%;
+        margin-top: -60px;
+    }
+
+    #contact {
+        width: 100%;
+        margin-left: -12.5%;
+        
+    }
+
+    #title-contact{
+        padding-left: 42%;
+        text-align: center;
+        margin-right: -30px;
+        font-size: 35px;
+        
+    }
+
+    #p-contact{
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        margin-right: -30px;
+        
+    }
+
+    .contact-screen{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr;
+        grid-gap: 10px;
+        padding-left: 30%;
+        text-align: center;
+    }
+
+    #footer-credits {
+        text-align: center;
+        padding: 10% 0 0 22%;
+        color: white;
     }
 
 }
