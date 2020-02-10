@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
 *{
     margin: 0;
@@ -10,13 +10,13 @@ html{
 }
 
 body{
-    
+    font-family: 'Roboto Slab', serif;
 }
 
 .toggle{
     width: 100%;
     padding: 10px 20px;
-    background: burlywood;
+    background-image: linear-gradient(to right top, #e52d27, #d82723, #cc201f, #bf191b, #b31217);
     color: #fff;
     text-align: right;
     font-size: 30px;
@@ -26,10 +26,11 @@ body{
 
 nav {
     width: 100%;
-    background-color: burlywood;
+    background-image: linear-gradient(to right top, #e52d27, #d82723, #cc201f, #bf191b, #b31217);
     box-shadow: 0px 5px 5px #2b2a2a96;
     position: fixed;
     z-index: 1;
+    text-align: right;
 }
 
 nav ul {
@@ -44,6 +45,7 @@ nav ul li{
     list-style: none;
     padding: 18px;
     justify-content: flex-end;
+    border-bottom: 4px solid transparent;
 }
 
 .item-list{
@@ -56,7 +58,7 @@ nav ul li a{
 }
 
 nav ul li:hover {
-    background-color: rgb(172, 133, 83);
+    border-bottom: 4px solid white;
 }
 
 #welcome-section{
@@ -65,29 +67,50 @@ nav ul li:hover {
     width: 100%;
     height: 100vh;
     align-items: center;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+}
+
+.title-h1 {
+    font-weight: 900;
+    font-size: 70px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding-left: 5%;
 }
 
 #projects {
     padding: 15vh 4.5vh;
     text-align: center;
-    width: 95%;
+    width: 100%;
+    background-image: linear-gradient(to right top, #e52d27, #d82723, #cc201f, #bf191b, #b31217);
+    margin-left: -4.5%;
+    padding-left: 2.4%;
 }
 
 #projects-title{
     padding-bottom: 5%;
+    color: white;
+    text-align: center;
+    padding-right: 7%;
+    padding-left: 11%;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .projects-guideline{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    padding-right: 7%;
+    padding-left: 11%;
 }
 
 .projects-screen {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 16px;
+    grid-gap: 16px;  
 }
 
 .flip-card{
@@ -95,7 +118,6 @@ nav ul li:hover {
     width: 400px;
     height: 250px;
     perspective: 2000px;
-    border-radius: 5px;
 }
 
 .flip-card-inner{
@@ -106,7 +128,7 @@ nav ul li:hover {
     transform-style: preserve-3d;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
-    border-radius: 5px;
+    border: 4px outset white;
 }
 
 .flip-card:hover .flip-card-inner{
@@ -124,28 +146,58 @@ nav ul li:hover {
 .flip-card-front{
     background-color: #000000;
     color: #fff;
-    border-radius: 5px;
 }
 
 .flip-card-back{
-    background-color: #000000;
-    color: #fff;
+    background-color: rgb(20, 33, 37);
+    color: white;
     transform: rotateY(180deg);
-    border-radius: 5px;
+    line-height: 3.5;
 }
 
+.button-project{
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+.button-project:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
 
 .image-project{
     width: 400px;
     height:  250px;
-    border-radius: 5px;
 }
 
-
+#tools{
+    padding: 15vh 4.5vh;
+    width: 100%;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+    margin-left: -4.5%;
+    padding-left: 2.4%;
+}
 
 #title-tools {
+    padding: 1vh 14vh 14vh 14vh;
     text-align: center;
-    padding: 15vh;
+    padding-left: 11%;
+}
+
+.tools-guideline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tools-screen {
@@ -153,28 +205,76 @@ nav ul li:hover {
     grid-template-columns: repeat(12, 1fr) ;
     grid-template-rows: 1fr;
     grid-gap: 10px;
+    padding-right: 7%;
+    padding-left: 11%;
 }
-.tools-guideline {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
 
 .icon-tool {
     font-size: 60px;
     transition: 0.5s;
+    text-decoration: none;
+    color: black;
 }
 
 .icon-tool:hover{
     transform: scale(1.2);
 }
 
+
+
 #contact {
-    display: flex;
     width: 100%;
-    height: 100vh;
+    background-image: linear-gradient(to right top, #e52d27, #d82723, #cc201f, #bf191b, #b31217);
+    padding: 15vh 4.5vh;
+    margin-left: -4.5%;
+    padding-left: 2.4%;
 }
 
+#title-contact{
+    padding: 1vh 14vh 1vh 14vh;
+    padding-left: 11%;
+    font-weight: 500;
+    font-size: 50px;
+    color: white;  
+    text-align: center;
+}
+
+#p-contact{
+    color: rgb(255, 255, 255);  
+    text-align: center;
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+
+.contact-guideline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-screen{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding-right: 7%;
+    padding-top: 3%;
+    padding-left: 11%;
+}
+
+.link-profile {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+
+.profile-icon {
+    font-size: 23px;
+    font-weight: 500;
+}
 
 
 
@@ -193,8 +293,7 @@ nav ul li:hover {
 
     .image-project{
         width: 375px;
-        height:  225px;
-        border-radius: 5px;
+        height: 225px;
     }
 
 
@@ -229,14 +328,15 @@ nav ul li:hover {
     }
 
     #projects {
-        width: 80%;
+        width: 100%;
+        padding-right: 25%;
     }
     
     .projects-screen {
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 4px;
+        grid-gap: 12px;
     }
 
     .flip-card{
@@ -247,7 +347,6 @@ nav ul li:hover {
     .image-project{
         width: 300px;
         height:  200px;
-        border-radius: 5px;
     }
 
     .tools-screen {
