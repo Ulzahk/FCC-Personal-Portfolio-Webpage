@@ -152,12 +152,19 @@ nav ul li:hover {
     background-color: rgb(20, 33, 37);
     color: white;
     transform: rotateY(180deg);
-    line-height: 3.5;
+    line-height: 4;
+}
+
+.flip-card-text {
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
 }
 
 .button-project{
     color: white;
-    padding: 16px 32px;
+    padding: 1px 32px 1px 32px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
@@ -246,6 +253,7 @@ nav ul li:hover {
     text-align: center;
     font-size: 20px;
     padding-left: 5%;
+    padding-top: 5%;
 }
 
 
@@ -274,6 +282,16 @@ nav ul li:hover {
 .profile-icon {
     font-size: 23px;
     font-weight: 500;
+}
+
+#footer-credits {
+    text-align: center;
+    padding: 10% 2% 0 7%;
+    color: white;
+}
+
+.footer-link {
+    color: white;
 }
 
 
@@ -347,6 +365,10 @@ nav ul li:hover {
     .image-project{
         width: 300px;
         height:  200px;
+    }
+
+    #tools{
+        width: 100%;
     }
 
     .tools-screen {
