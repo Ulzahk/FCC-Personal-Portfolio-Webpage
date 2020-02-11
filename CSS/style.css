@@ -11,6 +11,11 @@ html{
 
 body{
     font-family: 'Roboto Slab', serif;
+    width: 100%;
+}
+
+main {
+    width: 100%
 }
 
 .toggle{
@@ -381,6 +386,10 @@ nav ul li:hover {
 
 @media (max-width: 600px){
 
+    nav {
+        width: 100%;
+    }
+
     ul {
         width: 100%;
         display: none;
@@ -390,9 +399,11 @@ nav ul li:hover {
         width: 100%;
         display: block;
         text-align: center;
+        margin-left: -50px;
     }
     
     .toggle{
+        width: 100%;
         display: block;
         cursor: pointer;
     }
@@ -402,7 +413,11 @@ nav ul li:hover {
     }
 
     #welcome-section{
-        width: 100%; 
+        width: 100%;
+    }
+
+    .title-h1 {
+        font-size: 50px;
     }
 
     nav ul li:hover {
@@ -412,7 +427,7 @@ nav ul li:hover {
 
     #projects {
         width: 100%;
-        margin-left: -12.2%;
+        margin-left: -12.2%; 
     }
 
     #projects-title {
@@ -450,9 +465,12 @@ nav ul li:hover {
     }
 
     #title-tools{
-        padding-left: 45%;
+        padding-left: 40%;
         text-align: center;
         margin-right: -30px;
+        font-size: 35px;
+        display: flex;
+        align-self: center;
     }
 
     .tools-screen {
@@ -465,14 +483,14 @@ nav ul li:hover {
     #contact {
         width: 100%;
         margin-left: -12.2%;
-        
     }
 
     #title-contact{
-        padding-left: 45%;
+        padding-left: 43.5%;
         text-align: center;
-        margin-right: -30px;
         font-size: 32px;
+        display: flex;
+        align-self: center;
         
     }
 

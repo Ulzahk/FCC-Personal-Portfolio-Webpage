@@ -201,9 +201,26 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('.toggle').click(function () {
-                $('ul').toggleClass('active')
-            })
-        })
+                $('ul').show();
+            });
+            $('a').click(function () {
+                if (mediaQuery.matches) {
+                    $('ul').hide();
+                }
+            });
+        });
+
+        function navbarDisplay(mediaQueryx) {
+            if (mediaQuery.matches) {
+                $('ul').hide();
+            } else {
+                $('ul').show();
+            }
+        };
+
+        var mediaQuery = window.matchMedia("(max-width: 600px)");
+        navbarDisplay(mediaQuery);
+        mediaQuery.addListener(navbarDisplay);
     </script>
 </body>
 
