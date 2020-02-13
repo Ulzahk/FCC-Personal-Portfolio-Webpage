@@ -53,9 +53,6 @@ nav ul li{
     border-bottom: 4px solid transparent;
 }
 
-.item-list{
-    padding: 25px 15px 25px 15px;
-}
 
 nav ul li a{
     color: #fff;
@@ -70,7 +67,8 @@ nav ul li:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    padding-top: 47vh;
+    padding-bottom: 47vh;
     align-items: center;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
@@ -81,24 +79,21 @@ nav ul li:hover {
     font-size: 70px;
     font-family: 'Roboto Slab', serif;
     text-align: center;
-    padding-left: 5%;
+
 }
 
 #projects {
-    padding: 15vh 4.5vh;
+    padding-top: 15vh;
+    padding-bottom: 8vh;
     text-align: center;
     width: 100%;
     background-image: linear-gradient(to right top, #e52d27, #d82723, #cc201f, #bf191b, #b31217);
-    margin-left: -4.5%;
-    padding-left: 2.4%;
 }
 
 #projects-title{
     padding-bottom: 5%;
     color: white;
     text-align: center;
-    padding-right: 7%;
-    padding-left: 11%;
     font-size: 30px;
     font-weight: 500;
 }
@@ -107,8 +102,6 @@ nav ul li:hover {
     display: flex;
     align-items: center;
     justify-content: center; 
-    padding-right: 7%;
-    padding-left: 11%;
 }
 
 .projects-screen {
@@ -192,18 +185,16 @@ nav ul li:hover {
 }
 
 #tools{
-    padding: 15vh 4.5vh;
+    padding-top: 15vh;
+    padding-bottom: 8vh;
     width: 100%;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
-    margin-left: -4.5%;
-    padding-left: 2.4%;
 }
 
 #title-tools {
     padding: 1vh 14vh 14vh 14vh;
     text-align: center;
-    padding-left: 11%;
 }
 
 .tools-guideline {
@@ -217,11 +208,7 @@ nav ul li:hover {
     grid-template-columns: repeat(12, 1fr) ;
     grid-template-rows: 1fr;
     grid-gap: 10px;
-    padding-right: 7%;
-    padding-left: 11%;
 }
-
-
 
 .icon-tool {
     font-size: 60px;
@@ -234,19 +221,15 @@ nav ul li:hover {
     transform: scale(1.2);
 }
 
-
-
 #contact {
     width: 100%;
     background-image: linear-gradient(to right top, #e52d27, #d82723, #cc201f, #bf191b, #b31217);
-    padding: 15vh 4.5vh;
-    margin-left: -4.5%;
-    padding-left: 2.4%;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
 }
 
 #title-contact{
     padding: 1vh 14vh 1vh 14vh;
-    padding-left: 11%;
     font-weight: 500;
     font-size: 50px;
     color: white;  
@@ -257,8 +240,6 @@ nav ul li:hover {
     color: rgb(255, 255, 255);  
     text-align: center;
     font-size: 20px;
-    padding-left: 5%;
-    padding-top: 5%;
 }
 
 
@@ -273,9 +254,7 @@ nav ul li:hover {
     grid-template-columns: repeat(5, 1fr) ;
     grid-template-rows: 1fr;
     grid-gap: 10px;
-    padding-right: 7%;
     padding-top: 3%;
-    padding-left: 11%;
 }
 
 .link-profile {
@@ -295,7 +274,7 @@ nav ul li:hover {
 
 #footer-credits {
     text-align: center;
-    padding: 10% 2% 0 7%;
+    padding: 10% 0 0 0;
     color: white;
 }
 
@@ -305,7 +284,7 @@ nav ul li:hover {
 
 
 
-@media (max-width: 1100px){
+@media only screen and (max-width: 1100px){
 
     #welcome-section{
         width: 100%; 
@@ -313,11 +292,9 @@ nav ul li:hover {
 
     #projects {
         width: 100%;
-        margin-left: -8.5%;
     }
 
     #projects-title {
-        padding-left: 22%;
         font-size: 40px;
     }
 
@@ -325,7 +302,6 @@ nav ul li:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        padding-left: 8%;
 
     }
 
@@ -345,38 +321,26 @@ nav ul li:hover {
 
     #tools{
         width: 100%;
-        margin-left: -8.5%;
     }
 
 
     #title-tools{
-        padding-left: 30%;
         font-size: 40px;
     }
 
     .tools-screen {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        padding-left: 20%;
     }
 
     #contact {
         width: 100%;
-        margin-left: -8.5%; 
     }
 
     #title-contact{
-        padding-left: 30%;
         font-size: 40px;
     }
 
-    #p-contact{
-        padding-left: 10%; 
-    }
-
-    .contact-screen{
-        padding-left: 20%;
-    }
 
     .text-profile{
         display: none;
@@ -385,7 +349,7 @@ nav ul li:hover {
 
     #footer-credits {
         text-align: center;
-        padding: 10% 0 0 10%;
+        padding: 10% 0 0 0;
         color: white;
     }
 
@@ -393,7 +357,7 @@ nav ul li:hover {
 
 
 
-@media (max-width: 600px){
+@media only screen and (max-width: 600px){
 
     nav {
         width: 100%;
@@ -408,7 +372,6 @@ nav ul li:hover {
         width: 100%;
         display: block;
         text-align: center;
-        margin-left: -50px;
     }
     
     .toggle{
@@ -435,22 +398,18 @@ nav ul li:hover {
     }
 
     #projects {
-        width: 100%;
-        margin-left: -12.2%; 
+        width: 100%; 
     }
 
     #projects-title {
-        padding-left: 30%;
         margin-top: -20px;
     }
     
     .projects-screen {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 12px;
-        padding-left: 25%;
-        margin-left: -25px;
     }
 
 
@@ -470,13 +429,10 @@ nav ul li:hover {
 
     #tools{
         width: 100%;
-        margin-left: -12.2%;
     }
 
     #title-tools{
-        padding-left: 40%;
         text-align: center;
-        margin-right: -30px;
         font-size: 35px;
         display: flex;
         align-self: center;
@@ -485,17 +441,14 @@ nav ul li:hover {
     .tools-screen {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        padding-left: 32%;
         margin-top: -60px;
     }
 
     #contact {
         width: 100%;
-        margin-left: -12.2%;
     }
 
     #title-contact{
-        padding-left: 43.5%;
         text-align: center;
         font-size: 32px;
         display: flex;
@@ -504,12 +457,9 @@ nav ul li:hover {
     }
 
     #p-contact{
-        padding-left: 15%;
         padding-top: 5%;
         padding-bottom: 5%;
         text-align: center;
-        margin-right: -30px;
-        
     }
 
     .contact-screen{
@@ -517,7 +467,6 @@ nav ul li:hover {
         grid-template-columns: 1fr;
         grid-template-rows: 5fr;
         grid-gap: 10px;
-        padding-left: 30%;
         text-align: center;
     }
 
@@ -527,7 +476,7 @@ nav ul li:hover {
 
     #footer-credits {
         text-align: center;
-        padding: 10% 0 0 22%;
+        padding: 10% 0 0 0;
         color: white;
     }
 
