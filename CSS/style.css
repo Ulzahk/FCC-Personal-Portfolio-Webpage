@@ -315,7 +315,7 @@ nav ul li a{
     }
 
     .flip-card-back{
-        line-height: 2;
+        line-height: 1.7;
     }
 
     .image-project{
@@ -376,6 +376,7 @@ nav ul li a{
         width: 100%;
         display: block;
         text-align: center;
+        margin-left: -3.5%;
     }
     
     .toggle{
@@ -418,17 +419,17 @@ nav ul li a{
     }
 
     .flip-card{
-        width: 70vw;
-        height: 40vw;
+        width: 75vw;
+        height: 45vw;
     }
 
     .flip-card-back{
-        line-height: 1.7;
+        line-height: 1.2;
     }
 
     .image-project{
-        width: 70vw;
-        height: 40vw;
+        width: 75vw;
+        height: 45vw;
     }
 
 
