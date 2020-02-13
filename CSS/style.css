@@ -32,7 +32,7 @@ main {
 nav {
     width: 100%;
     background-image: linear-gradient(to right top, #e52d27, #d82723, #cc201f, #bf191b, #b31217);
-    box-shadow: 0px 5px 5px #2b2a2a96;
+    box-shadow: 0px 5px 5px rgba(58, 54, 54, 0.753);
     position: fixed;
     z-index: 1;
     text-align: right;
@@ -49,19 +49,21 @@ nav ul li{
     display: inline-block;
     list-style: none;
     padding: 18px;
-    justify-content: flex-end;
     border-bottom: 4px solid transparent;
-}
-
-
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
 }
 
 nav ul li:hover {
     border-bottom: 4px solid white;
 }
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 18px;
+}
+
+
+
 
 #welcome-section{
     display: flex;
@@ -108,13 +110,13 @@ nav ul li:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 16px;  
+    grid-gap: 32px;  
 }
 
 .flip-card{
     background-color: transparent;
-    width: 400px;
-    height: 250px;
+    width: 25vw;
+    height: 15vw;
     perspective: 2000px;
 }
 
@@ -150,7 +152,7 @@ nav ul li:hover {
     background-color: rgb(20, 33, 37);
     color: white;
     transform: rotateY(180deg);
-    line-height: 4;
+    line-height: 2.2;
 }
 
 .flip-card-text {
@@ -180,8 +182,8 @@ nav ul li:hover {
 }
 
 .image-project{
-    width: 400px;
-    height:  250px;
+    width: 25vw;
+    height: 15vw;
 }
 
 #tools{
@@ -224,8 +226,8 @@ nav ul li:hover {
 #contact {
     width: 100%;
     background-image: linear-gradient(to right top, #e52d27, #d82723, #cc201f, #bf191b, #b31217);
-    padding-top: 20vh;
-    padding-bottom: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
 }
 
 #title-contact{
@@ -295,7 +297,7 @@ nav ul li:hover {
     }
 
     #projects-title {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .projects-screen {
@@ -306,8 +308,8 @@ nav ul li:hover {
     }
 
     .flip-card{
-        width: 350px;
-        height:  200px;
+        width: 40vw;
+        height: 25vw;
     }
 
     .flip-card-back{
@@ -315,8 +317,8 @@ nav ul li:hover {
     }
 
     .image-project{
-        width: 350px;
-        height: 200px;
+        width: 40vw;
+        height: 25vw;
     }
 
     #tools{
@@ -325,7 +327,7 @@ nav ul li:hover {
 
 
     #title-tools{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .tools-screen {
@@ -338,7 +340,7 @@ nav ul li:hover {
     }
 
     #title-contact{
-        font-size: 40px;
+        font-size: 35px;
     }
 
 
@@ -402,6 +404,7 @@ nav ul li:hover {
     }
 
     #projects-title {
+        font-size: 20px;
         margin-top: -20px;
     }
     
@@ -409,13 +412,12 @@ nav ul li:hover {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 12px;
+        grid-gap: 24px;
     }
 
-
     .flip-card{
-        width: 300px;
-        height: 200px;
+        width: 70vw;
+        height: 40vw;
     }
 
     .flip-card-back{
@@ -423,9 +425,10 @@ nav ul li:hover {
     }
 
     .image-project{
-        width: 300px;
-        height:  200px;
+        width: 70vw;
+        height: 40vw;
     }
+
 
     #tools{
         width: 100%;
@@ -433,7 +436,7 @@ nav ul li:hover {
 
     #title-tools{
         text-align: center;
-        font-size: 35px;
+        font-size: 25px;
         display: flex;
         align-self: center;
     }
@@ -446,13 +449,16 @@ nav ul li:hover {
 
     #contact {
         width: 100%;
+        padding-top: 15vh;
+        padding-bottom: 14vh;
     }
 
     #title-contact{
         text-align: center;
-        font-size: 32px;
+        font-size: 25px;
         display: flex;
         align-self: center;
+        padding-bottom: 20%;
         
     }
 
@@ -476,7 +482,7 @@ nav ul li:hover {
 
     #footer-credits {
         text-align: center;
-        padding: 10% 0 0 0;
+        padding: 30% 0 0 0;
         color: white;
     }
 
