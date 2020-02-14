@@ -280,6 +280,7 @@ nav ul li a{
     transition: 0.4s;
     padding-left: 5px;
     padding-right: 5px;
+    cursor: pointer;
 }
 
 .link-profile:hover{
@@ -294,6 +295,10 @@ nav ul li a{
 }
 
 .text-profile{
+    cursor: pointer;
+}
+
+.text-p {
     cursor: pointer;
 }
 
