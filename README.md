@@ -1,7 +1,9 @@
 # FCC-Personal-Portfolio-Webpage
-## Objective
+
+### Objective 🎯
 Build a Personal Portfolio Webpage following the user requirements.
-### User Requirements
+
+### User Requirements 📜
 - The portfolio should have a welcome **section** with an **id welcome-section**.
 - The welcome **section** should have an **h1** element that contains text.
 - The portfolio should have a projects **section** with an **id projects**.
@@ -13,7 +15,8 @@ Build a Personal Portfolio Webpage following the user requirements.
 - The portfolio should have at least one **media query**.
 - The height of the welcome **section** should be equal to the height of the **viewport**.
 - The **navbar** should always be at the top of the **viewport**.
-### Tools That Can Be Used
+
+### Tools That Can Be Used 🛠
 - HTML
 - CSS
 - JavaScript
