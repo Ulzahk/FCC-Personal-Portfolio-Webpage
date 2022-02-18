@@ -14,7 +14,7 @@ Build a Personal Portfolio Webpage following the user requirements.
 - The height of the welcome **section** should be equal to the height of the **viewport**.
 - The **navbar** should always be at the top of the **viewport**.
 
-### Tools That Can Be Used 🛠
+## 🛠 Tools That Can Be Used
 - HTML
 - CSS
 - JavaScript
